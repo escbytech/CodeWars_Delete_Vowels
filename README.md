@@ -7,16 +7,3 @@ Removing vowels from the received string from the user
 #For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
 
 For the solution, we use the def function and the for loop.
-
-def remove_vowels(comment):
-    vowels = "aeiouyAEIOUYаеёиоуыэюяАЕЁИОУЫЭЮЯ"
-    result = ""
-
-    for word in comment:
-        if word not in vowels:
-            result += word
-    return result
-
-input_comment = str(input("Share your comment here: "))
-result = remove_vowels(input_comment)
-print(result)
