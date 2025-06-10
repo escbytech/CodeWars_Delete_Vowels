@@ -1,0 +1,12 @@
+def remove_vowels(comment):
+    vowels = "aeiouyAEIOUYаеёиоуыэюяАЕЁИОУЫЭЮЯ"
+    result = ""
+
+    for word in comment:
+        if word not in vowels:
+            result += word
+    return result
+
+input_comment = str(input("Share your comment here: "))
+result = remove_vowels(input_comment)
+print(result)
